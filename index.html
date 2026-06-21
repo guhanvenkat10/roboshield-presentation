@@ -628,7 +628,7 @@ class Component extends DCLogic {
     this._onResize = () => this._fit();
     window.addEventListener("resize", this._onResize);
     this._onKey = (e) => {
-      if (e.key === "ArrowRight" || e.key === " " || e.key === "PageDown") { e.preventDefault(); this.next(); }
+      if (e.key === "ArrowRight" || e.key === "PageDown") { e.preventDefault(); this.next(); }
       else if (e.key === "ArrowLeft" || e.key === "PageUp") { e.preventDefault(); this.prev(); }
     };
     window.addEventListener("keydown", this._onKey);
